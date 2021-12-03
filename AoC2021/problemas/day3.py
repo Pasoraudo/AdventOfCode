@@ -3,8 +3,9 @@ from collections import Counter
 
 def parte1(data):
     num = [Counter(i) for i in zip(*data)]
-    res = [1 if  i.get('1') > i.get('0') else 0 for i in num]
-    gamma = 0; epsilon = 0
+    res = [1 if i.get('1') > i.get('0') else 0 for i in num]
+    gamma = 0
+    epsilon = 0
     p = len(data[0]) - 1
     for i in num:
         if i.get('1') > i.get('0'):
