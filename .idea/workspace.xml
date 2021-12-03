@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="day3">
+    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="day3 parte 1 fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/data/day3" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/data/day3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day3.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638527464943</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="day3 parte 1 fixed">
+      <created>1638559037067</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1638559037067</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -126,6 +135,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day3" />
-    <option name="LAST_COMMIT_MESSAGE" value="day3" />
+    <MESSAGE value="day3 parte 1 fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="day3 parte 1 fixed" />
   </component>
 </project>
