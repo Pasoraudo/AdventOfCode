@@ -1,20 +1,17 @@
-from collections import Counter
+from collections import Counter as count
+
+
+def reverse(n):
+    return ''.join(['1' if i == '1' else '0' for i in n])
 
 
 def parte1(data):
-    num = [Counter(i) for i in zip(*data)]
-    res = [1 if i.get('1') > i.get('0') else 0 for i in num]
-    gamma = 0
-    epsilon = 0
-    p = len(data[0]) - 1
-    for i in num:
-        if i.get('1') > i.get('0'):
-            gamma += pow(2, p)
-        else:
-            epsilon += pow(2, p)
-        p -= 1
+    num = [count(i) for i in zip(*data)]
+    res = ['1' if i.get('1') > i.get('0') else '0' for i in num]
+    gamma = int(''.join(res), 2)
+    print(res)
+    epsilon = int(reverse(res), 2)
     return gamma * epsilon
-
 
 def parte2(data):
     return 0
