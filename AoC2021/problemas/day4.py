@@ -1,10 +1,69 @@
+import numpy as np
+from collections import Counter
+
+def parte1(numeros, tableros):
+    for num in numeros:
+        posiblesGanadores = []
+        for t in tableros:
+            for line in t:
+                for n in line:
+                    if n == num:
+                        line[line.index(n)] = 'check'
+                        posiblesGanadores.append(t)
+        for t in posiblesGanadores:
+            if comprobarSiGanado(t):
+                return int(num) * sumAllUnmarked(t)
+
+def parte2(numeros, tableros):
+    for num in numeros:
+        posiblesGanadores = []
+        for t in tableros:
+            for line in t:
+                for n in line:
+                    if n == num:
+                        line[line.index(n)] = 'check'
+                        posiblesGanadores.append(t)
+        for t in posiblesGanadores:
+            if comprobarSiGanado(t):
+                if len(tableros) > 1:
+                    tableros.remove(t)
+                else:
+                    return int(num) * sumAllUnmarked(tableros[0])
+
+
+def sumAllUnmarked(t):
+    sum = 0
+    for line in t:
+        for i in line:
+             if i != 'check':
+                sum += int(i)
+    return sum
+
+
+def comprobarSiGanado(t):
+    lines = [Counter(line) for line in t]
+    columns = [Counter(col) for col in np.transpose(t)]
+    for i in lines:
+        if i['check'] == 5:
+            return True
+    for i in columns:
+        if i['check'] == 5:
+            return True
+    return False
+
+
+
 def main():
-    address = "./data/day4"
-    file = open(address, "r")
-    data = file.read().split("\n")
-    file.close()
-    print(data)
-    print("hola")
-    #problems = {1: parte1, 2: parte1}
+    with open("./data/day4", 'r') as f:
+        numeros= f.readline().split(',')
+        tableros = []
+        numTablero = -1
+        for i in f.readlines():
+            if i == '\n':
+                tableros.append([])
+                numTablero += 1
+            else:
+                tableros[numTablero].append(i.split())
+    problems = {1: parte1, 2: parte2}
     prob = int(input("¿Problema 1 o 2?\n"))
-    #print("El resultado es: ", problems[prob](data))
+    print("El resultado es: ", problems[prob](numeros, tableros))

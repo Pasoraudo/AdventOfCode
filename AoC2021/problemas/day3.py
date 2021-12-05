@@ -2,26 +2,41 @@ from collections import Counter
 
 
 def reverse(n):
-    return ''.join(['0' if i == '1' else '1' for i in n])
+    return ['0' if i == '1' else '1' for i in n]
 
 
 def parte1(data):
     num = [Counter(i) for i in zip(*data)]
     res = ['1' if i.get('1') > i.get('0') else '0' for i in num]
     gamma = int(''.join(res), 2)
-    epsilon = int(reverse(res), 2)
+    epsilon = int(''.join(reverse(res)), 2)
     return gamma * epsilon
 
 
 def parte2(data):
-    num = ['']*len(data[0])
-    for i in data:
-        for j in range(len(data[0])):
-            num[j] += i[j]
-    c = [Counter(i) for i in num]
-    aux = ['1' if x['1'] >= x['0'] else '0' for x in c]
-    co = ''.join(['0' if x['0'] <= x['1'] else '1' for x in c])
+    oxygen = oxygenGenerator(data.copy())
+    co = coGenerator(data.copy())
+    return int(oxygen, 2) * int(co, 2)
 
+def generator(input, func):
+    pos = 0
+    while(len(input) > 1):
+        num = {'0': 0, '1': 0}
+        for i in input:
+            num[i[pos]] += 1
+        masComun = '1' if func(num['1'], num['0']) else '0'
+        aux = input.copy()
+        for i in aux:
+            if i[pos] != masComun:
+                input.remove(i)
+        pos += 1
+    return input[0]
+
+def oxygenGenerator(oxygen):
+    return generator(oxygen, lambda a, b: a >= b)
+
+def coGenerator(co):
+    return generator(co, lambda a, b: a < b)
 
 
 def main():
