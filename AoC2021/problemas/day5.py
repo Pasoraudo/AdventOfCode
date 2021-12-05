@@ -23,13 +23,7 @@ def extraerPuntos(linea):
 
 
 def intercambiar(x1, y1, x2, y2):
-    aux = x2
-    x2 = x1
-    x1 = aux
-    aux = y2
-    y2 = y1
-    y1 = aux
-    return x1, y1, x2, y2
+    return x2, y2, x1, y1
 
 def radar_diagonal(x, y, p, n, res):
     for d in range(n):
