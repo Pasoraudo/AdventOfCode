@@ -52,5 +52,6 @@ def añadirPosicion(x, y, dic):
 def main():
     with open("./data/day5", 'r') as f:
         data = f.read().split('\n')
-    prob = int(input("¿Problema 1 o 2?\n"))
-    print("El resultado es: ", problema(data, prob))
+    print('Los resultados del dia 5')
+    print("Parte 1:", problema(data, 1))
+    print("Parte 2:", problema(data, 2))

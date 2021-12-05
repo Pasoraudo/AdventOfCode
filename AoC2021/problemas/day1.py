@@ -17,6 +17,6 @@ def parte2(input):
 def main():
     with open("./data/day1", 'r') as f:
         data = [int(i) for i in f.readlines()]
-    problems = {1: parte1, 2: parte2}
-    prob = int(input("¿Problema 1 o 2?\n"))
-    print("El resultado es: ", problems[prob](data))
+    print('Los resultados del dia 1')
+    print("Parte 1:", parte1(data))
+    print("Parte 2:", parte2(data))

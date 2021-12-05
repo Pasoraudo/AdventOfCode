@@ -33,7 +33,6 @@ def main():
     data = []
     for i in aux:
         data.append(i.split())
-    print(data)
-    problems = {1: parte1, 2: parte2}
-    prob = int(input("¿Problema 1 o 2?\n"))
-    print("El resultado es: ", problems[prob](data))
+    print('Los resultados del dia 2')
+    print("Parte 1:", parte1(data))
+    print("Parte 2:", parte2(data))
