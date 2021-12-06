@@ -1,0 +1,30 @@
+from collections import Counter
+
+
+def problema(fishs, nDays):
+    numFishs = Counter(fishs)
+    for day in range(nDays):
+        aux = {}
+        for d in numFishs:
+            if d != 0:
+                if d - 1 not in aux.keys():
+                    aux[d - 1] = 0
+                aux[d - 1] += numFishs[d]
+            else:
+                if 6 not in aux.keys():
+                    aux[6] = 0
+                aux[6] += numFishs[0]
+                if 8 not in aux.keys():
+                    aux[8] = 0
+                aux[8] += numFishs[0]
+        numFishs = aux.copy()
+        #print('After day', day + 1, ':', numFishs)
+    return sum(numFishs.values())
+
+
+def main():
+    with open("./data/day6", 'r') as f:
+        data = [int(i) for i in f.read().split(',')]
+    print('Los resultados del dia 6')
+    print("Parte 1:", problema(data.copy(), 80))
+    print("Parte 2:", problema(data.copy(), 256))
