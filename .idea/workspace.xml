@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="Commit desde pc sobremesa">
+      <change afterPath="$PROJECT_DIR$/AoC2021/data/day8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/data/day7" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/data/day7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day7.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day7.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
