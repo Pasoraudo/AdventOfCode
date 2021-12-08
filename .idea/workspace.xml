@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="Commit desde pc sobremesa">
-      <change afterPath="$PROJECT_DIR$/AoC2021/data/day8" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="dia 8">
+      <change afterPath="$PROJECT_DIR$/AoC2021/data/day9" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day12.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day9.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AoC2021/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day7.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day7.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638825615615</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="dia 8">
+      <created>1638967865522</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1638967865523</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +191,7 @@
     <MESSAGE value="no sale la parte2" />
     <MESSAGE value="Dias del 1 al 5 completos" />
     <MESSAGE value="Commit desde pc sobremesa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit desde pc sobremesa" />
+    <MESSAGE value="dia 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="dia 8" />
   </component>
 </project>
