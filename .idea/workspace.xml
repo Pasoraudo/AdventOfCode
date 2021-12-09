@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="dia 8">
-      <change afterPath="$PROJECT_DIR$/AoC2021/data/day9" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day11.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day12.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day9.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/__init__.py" afterDir="false" />
+    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="preparados los dias 9-12">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/data/day9" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/data/day9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day9.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day9.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +49,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pasoraudo\PycharmProjects\AoC\AoC2021\problemas" />
       <recent name="C:\Users\jandr\PycharmProjects\AdventOfCode\AoC2021\problemas" />
     </key>
   </component>
@@ -170,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1638967865523</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="preparados los dias 9-12">
+      <created>1638968452884</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1638968452884</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,6 +197,7 @@
     <MESSAGE value="Dias del 1 al 5 completos" />
     <MESSAGE value="Commit desde pc sobremesa" />
     <MESSAGE value="dia 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="dia 8" />
+    <MESSAGE value="preparados los dias 9-12" />
+    <option name="LAST_COMMIT_MESSAGE" value="preparados los dias 9-12" />
   </component>
 </project>
