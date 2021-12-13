@@ -1,4 +1,5 @@
 import numpy as np
+import time
 
 
 def parte1(m, steps):
@@ -49,11 +50,25 @@ def parte2(m):
                     makeExplosion(m, x, y, alreadyFlash)
     return steps
 
-
-
-def main():
+def leerDatos():
     with open("./data/day11", 'r') as f:
         data = np.matrix([[int(j) for j in i[:-1]] for i in f.readlines()])
+    return data
+
+
+def getStats():
+    data = leerDatos()
+    data2 = data.copy()
+    t1 = time.time()
+    res_1 = parte1(data, 100)
+    t_parte1 = time.time() - t1
+    t1 = time.time()
+    res_2 = parte2(data2)
+    t_parte2 = time.time() - t1
+    return res_1, t_parte1, res_2, t_parte2
+
+def main():
+    data = leerDatos()
     print('Los resultados del dia 11')
     print("Parte 1:", parte1(data.copy(), 100))
     print("Parte 2:", parte2(data))

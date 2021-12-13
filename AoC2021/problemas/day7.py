@@ -1,6 +1,6 @@
 import statistics as s
 import matplotlib.pyplot as plt
-
+import time
 
 def parte1(crabs):
     pos_h = int(s.median(crabs))
@@ -38,9 +38,24 @@ def parte2(crabs):
 def sumatorio(crab, pos_h):
     return int(abs(crab - pos_h) * (abs(crab - pos_h) + 1) / 2)
 
-def main():
+
+def getStats():
+    data = leerDatos()
+    t1 = time.time()
+    res_1 = parte1(data)
+    t_parte1 = time.time() - t1
+    t1 = time.time()
+    res_2 = parte2(data)
+    t_parte2 = time.time() - t1
+    return res_1, t_parte1, res_2, t_parte2
+
+def leerDatos():
     with open("./data/day7", 'r') as f:
         data = [int (i) for i in f.read().split(',')]
+    return data
+
+def main():
+    data = leerDatos()
     print('Los resultados del dia 7')
     print("Parte 1:", parte1(data))
     print("Parte 2:", parte2(data))

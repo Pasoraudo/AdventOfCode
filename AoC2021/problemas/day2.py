@@ -1,3 +1,6 @@
+import time
+
+
 def parte1(input):
     hPos = 0
     depth = 0
@@ -25,14 +28,24 @@ def parte2(input):
             aim -= x
     return hPos * depth
 
+
+def leerDatos():
+    with open("./data/day2", 'r') as f:
+        data = [line[:-1].split(' ') for line in f.readlines()]
+    return data
+
+
+def getStats():
+    t1 = time.time()
+    res_1 = parte1(leerDatos())
+    t_parte1 = time.time() - t1
+    t1 = time.time()
+    res_2 = parte2(leerDatos())
+    t_parte2 = time.time() - t1
+    return res_1, t_parte1, res_2, t_parte2
+
 def main():
-    address = "./data/day2"
-    file = open(address, "r")
-    aux = file.read().split("\n")
-    file.close()
-    data = []
-    for i in aux:
-        data.append(i.split())
+    data = leerDatos()
     print('Los resultados del dia 2')
     print("Parte 1:", parte1(data))
     print("Parte 2:", parte2(data))

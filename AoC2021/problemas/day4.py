@@ -1,5 +1,7 @@
 import numpy as np
 from collections import Counter
+import time
+
 
 def parte1(numeros, tableros):
     for num in numeros:
@@ -51,11 +53,9 @@ def comprobarSiGanado(t):
             return True
     return False
 
-
-
-def main():
+def leerDatos():
     with open("./data/day4", 'r') as f:
-        numeros= f.readline().split(',')
+        numeros = f.readline().split(',')
         tableros = []
         numTablero = -1
         for i in f.readlines():
@@ -64,6 +64,20 @@ def main():
                 numTablero += 1
             else:
                 tableros[numTablero].append(i.split())
+    return numeros, tableros
+
+def getStats():
+    numeros, tableros = leerDatos()
+    t1 = time.time()
+    res_1 = parte1(numeros, tableros)
+    t_parte1 = time.time() - t1
+    t1 = time.time()
+    res_2 = parte2(numeros, tableros)
+    t_parte2 = time.time() - t1
+    return res_1, t_parte1, res_2, t_parte2
+
+def main():
+    numeros, tableros = leerDatos()
     print('Los resultados del dia 4')
     print("Parte 1:", parte1(numeros, tableros))
     print("Parte 2:", parte2(numeros, tableros))

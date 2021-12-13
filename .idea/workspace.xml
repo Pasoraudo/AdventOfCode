@@ -4,10 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="day10 completo">
-      <change afterPath="$PROJECT_DIR$/AoC2021/data/day11" afterDir="false" />
+    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="day11 completo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/data/day2" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/data/day2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day1.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day10.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day10.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day11.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day11.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day12.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day3.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day5.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day5.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day6.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day6.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day7.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day7.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day8.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day8.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day9.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day9.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1639133601883</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="day11 completo">
+      <created>1639223488299</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1639223488299</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +224,7 @@
     <MESSAGE value="dia 8" />
     <MESSAGE value="preparados los dias 9-12" />
     <MESSAGE value="day10 completo" />
-    <option name="LAST_COMMIT_MESSAGE" value="day10 completo" />
+    <MESSAGE value="day11 completo" />
+    <option name="LAST_COMMIT_MESSAGE" value="day11 completo" />
   </component>
 </project>

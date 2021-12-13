@@ -1,3 +1,6 @@
+import time
+
+
 def parte1(input):
     res = 0
     for line in input:
@@ -56,12 +59,10 @@ def parte2(input, output):
     return res
 
 
-"""
-    El input debe tener un enter al final, en caso contrario salta un error
-"""
-
-
-def main():
+def leerDatos():
+    """
+        El input debe tener un enter al final, en caso contrario salta un error
+    """
     with open("./data/day8", 'r') as f:
         data = [i[:-1].split(' | ') for i in f.readlines()]
     input = []
@@ -69,6 +70,22 @@ def main():
     for i in data:
         input.append(i[0].split(' '))
         output.append(i[1].split(' '))
+    return input, output
+
+
+def getStats():
+    input, output = leerDatos()
+    t1 = time.time()
+    res_1 = parte1(output)
+    t_parte1 = time.time() - t1
+    t1 = time.time()
+    res_2 = parte2(input, output)
+    t_parte2 = time.time() - t1
+    return res_1, t_parte1, res_2, t_parte2
+
+
+def main():
+    input, output = leerDatos()
     print('Los resultados del dia 8')
     print("Parte 1:", parte1(output))
     print("Parte 2:", parte2(input, output))

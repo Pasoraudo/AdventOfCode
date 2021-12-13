@@ -1,4 +1,5 @@
 from collections import Counter
+import time
 
 
 def reverse(n):
@@ -38,6 +39,19 @@ def oxygenGenerator(oxygen):
 def coGenerator(co):
     return generator(co, lambda a, b: a < b)
 
+def leerDatos():
+    with open("./data/day3", 'r') as f:
+        data = f.readlines()
+    return data
+
+def getStats():
+    t1 = time.time()
+    res_1 = parte1(leerDatos())
+    t_parte1 = time.time() - t1
+    t1 = time.time()
+    res_2 = parte2(leerDatos())
+    t_parte2 = time.time() - t1
+    return res_1, t_parte1, res_2, t_parte2
 
 def main():
     address = "./data/day3"

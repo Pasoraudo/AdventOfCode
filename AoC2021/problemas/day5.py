@@ -1,3 +1,6 @@
+import time
+
+
 def problema(lineas, parte):
     res = {}
     for linea in lineas:
@@ -42,10 +45,23 @@ def añadirPosicion(x, y, dic):
         dic[k] = 0
     dic[k] += 1
 
-
-def main():
+def leerDatos():
     with open("./data/day5", 'r') as f:
         data = f.read().split('\n')
+    return data
+
+def getStats():
+    t1 = time.time()
+    res_1 = problema(leerDatos(), 1)
+    t_parte1 = time.time() - t1
+    t1 = time.time()
+    res_2 = problema(leerDatos(), 2)
+    t_parte2 = time.time() - t1
+    return res_1, t_parte1, res_2, t_parte2
+
+
+def main():
+    data = leerDatos()
     print('Los resultados del dia 5')
     print("Parte 1:", problema(data, 1))
     print("Parte 2:", problema(data, 2))

@@ -1,3 +1,4 @@
+import time
 
 
 def parte1(input):
@@ -48,10 +49,25 @@ def removeCorrupted(input):
             res.append(pila)
     return res
 
-
-def main():
+def leerDatos():
     with open("./data/day10", 'r') as f:
         data = [i for i in f.read().split('\n')]
+    return data
+
+
+def getStats():
+    data = leerDatos()
+    t1 = time.time()
+    res_1 = parte1(data)
+    t_parte1 = time.time() - t1
+    t1 = time.time()
+    res_2 = parte2(data)
+    t_parte2 = time.time() - t1
+    return res_1, t_parte1, res_2, t_parte2
+
+
+def main():
+    data = leerDatos()
     print('Los resultados del dia 10')
     print("Parte 1:", parte1(data))
     print("Parte 2:", parte2(data))

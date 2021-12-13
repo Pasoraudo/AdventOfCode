@@ -1,4 +1,5 @@
 from collections import Counter
+import time
 
 
 def problema(fishs, nDays):
@@ -22,9 +23,25 @@ def problema(fishs, nDays):
     return sum(numFishs.values())
 
 
-def main():
+def getStats():
+    data = leerDatos()
+    data2 = data.copy()
+    t1 = time.time()
+    res_1 = problema(data, 80)
+    t_parte1 = time.time() - t1
+    t1 = time.time()
+    res_2 = problema(data2, 256)
+    t_parte2 = time.time() - t1
+    return res_1, t_parte1, res_2, t_parte2
+
+def leerDatos():
     with open("./data/day6", 'r') as f:
         data = [int(i) for i in f.read().split(',')]
+    return data
+
+
+def main():
+    data = leerDatos()
     print('Los resultados del dia 6')
     print("Parte 1:", problema(data.copy(), 80))
-    print("Parte 2:", problema(data.copy(), 256))
+    print("Parte 2:", problema(data, 256))

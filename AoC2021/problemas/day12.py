@@ -1,3 +1,6 @@
+import time
+
+
 def parte1(input):
     return 0
 
