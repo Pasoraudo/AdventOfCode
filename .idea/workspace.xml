@@ -4,22 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="day11 completo">
+    <list default="true" id="2c9592f7-c789-4b2a-bb7b-f93cba348b18" name="Changes" comment="dia 9">
+      <change afterPath="$PROJECT_DIR$/AoC2021/problemas/day13.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AoC2021/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/data/day2" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/data/day2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day1.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day10.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day10.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day11.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day11.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day12.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day12.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day2.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day3.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day4.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day5.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day5.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day6.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day6.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day7.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day7.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day8.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day8.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AoC2021/problemas/day9.py" beforeDir="false" afterPath="$PROJECT_DIR$/AoC2021/problemas/day9.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +23,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -207,6 +196,31 @@
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
+        <entry key="6ab5a185-c9fd-4d61-b753-7a4d77a84915">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:C:/Users/Pasoraudo/PycharmProjects/AoC/AoC2021" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
         <entry key="MAIN">
           <value>
             <State />
@@ -214,6 +228,12 @@
         </entry>
       </map>
     </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="6ab5a185-c9fd-4d61-b753-7a4d77a84915" value="TOOL_WINDOW" />
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="day3" />
