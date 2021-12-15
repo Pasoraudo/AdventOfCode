@@ -41,7 +41,7 @@ def parte1(coordenadas, folds):
                     count += 1
 
         print(count)
-    np.savetxt("./data/salida", res, fmt="%d")
+    np.savetxt("./data/day13_salida", res, fmt="%d")
     return count
 
 
